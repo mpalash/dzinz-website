@@ -1,0 +1,46 @@
+// COLORS
+$color-blue:     #0C37C9;
+
+// GREYS
+$color-black:        #000000;
+$color-ink:          #292826;
+$color-grey-darkest: #2D2D2D;
+$color-grey-dark:    #4B4B4B;
+$color-grey:         #919191;
+$color-grey-light:   #d7d7d7;
+$color-white:        #FFFFFF;
+
+// GRADIENTS
+
+
+// TYPOGRAPHY
+$text-font-family: "IBM Plex Sans", sans-serif;
+$font-rs: 'Roboto Slab', sans-serif;
+$font-ips: 'IBM Plex Sans', sans-serif;
+$line-height-base: 1.33em;
+
+// SIZES
+// Use these to specify fixed size elements
+$container-max-width: 1024px;
+$responsive-medium:   1024px;
+$responsive-small:    640px;
+
+// SPACING
+// Use these variables for padding & margin
+$s-xxxl:128px;
+$s-xxl: 64px;
+$s-xl:  48px;
+$s-l:   32px;
+$s-m:   24px;
+$s-b:   16px;
+$s-s:   8px;
+$s-xs:  4px;
+$s-xxs: 2px;
+
+// MIXINS
+@mixin rc-small-caps {
+  font-family: $font-ips;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
