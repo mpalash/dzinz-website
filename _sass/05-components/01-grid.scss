@@ -1,5 +1,5 @@
 $num-columns: 12;
-$gutter: 10px;
+$gutter: $s-b; // 16px
 
 .container {
   max-width: $container-max-width;
@@ -7,17 +7,21 @@ $gutter: 10px;
 }
 .r,
 .row {
+  position: relative;
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
 
   @media screen and (max-width: $responsive-small) {
-    flex-flow: column nowrap;
+    .responsive {
+      flex-flow: column nowrap;
+    }
   }
 }
 .c,
 .col,
 .column {
+  position: relative;
   flex: 1 0 auto;
   padding: 0 $gutter;
 }
@@ -28,5 +32,19 @@ $col-widths: ();
   .col-#{$i},
   .column-#{$i} {
     flex-basis: ($i / $num-columns) * 100%;
+  }
+  .o-#{$i},
+  .off-#{$i},
+  .offset-#{$i} {
+    margin-left: ($i / $num-columns) * 100%;
+  }
+  .p-#{$i},
+  .pad-#{$i},
+  .padding-#{$i} {
+    padding-left: ($i / $num-columns) * 100%;
+  }
+  .w-#{$i},
+  .width-#{$i} {
+    width: ($i / $num-columns) * 100%;
   }
 }

@@ -5,20 +5,13 @@
   padding-right: $s-xxl;
 }
 .page-content {
-  .wrapper {
-    padding-top: $s-xxxl;
-    min-height: calc(100vh - #{$s-m*3});
-  }
-}
-
-footer {
-  height: $s-m*3;
   display: flex;
-  flex-direction: row;
-  .wrapper {
-    padding-top: $s-m;
-    padding-bottom: $s-m;
-    border-left: 1px solid $color-blue;
-    font-size: 0.8rem;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
+  > div,
+  > article {
+    flex: 1 0 auto;
   }
 }

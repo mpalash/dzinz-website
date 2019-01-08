@@ -23,6 +23,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 social:
   email: mail.dzinz1@gmail.com
   facebook: https://www.facebook.com/pg/dzinzinteriors
+  website: https://www.dzinz.co
 
 # Collections
 collections:

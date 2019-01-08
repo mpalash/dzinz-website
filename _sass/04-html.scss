@@ -15,7 +15,8 @@ body {
 body {
   margin: 0;
   padding: 0;
-  font-family: $font-ips;
+  font-family: $font-family-text;
+  font-weight: $font-weight-text;
   line-height: $line-height-base;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -25,9 +26,9 @@ body {
   orphans: 2;
 }
 h1, h2, h3 {
-  font-family: $font-rs;
-  font-weight: normal;
-  color: $color-blue;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-heading;
+  color: $color-teal;
 }
 h1 { font-size: $s-m; }
 h2 { font-size: $s-b; }

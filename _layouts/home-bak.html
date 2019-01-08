@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% for page in site.projects reversed %}
+<div class="project">
+  {% if page.pubdate %}
+  <div class="meta">
+    <p class="pub-date">{{ page.pubdate | date: "%Y" }}</p>
+  </div>
+  {% endif %}
+  <h2><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+  <p>{{ page.content }}</p>
+</div>
+{% endfor %}

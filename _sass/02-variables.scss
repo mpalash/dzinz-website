@@ -1,5 +1,9 @@
 // COLORS
-$color-blue:     #0C37C9;
+$color-blue:         #0C37C9;
+$color-teal:         #007984;
+$color-teal-dark:    #0D4C5F;
+$color-teal-darker:  #003B4D;
+$color-red:          #F05E61;
 
 // GREYS
 $color-black:        #000000;
@@ -14,9 +18,17 @@ $color-white:        #FFFFFF;
 
 
 // TYPOGRAPHY
-$text-font-family: "IBM Plex Sans", sans-serif;
-$font-rs: 'Roboto Slab', sans-serif;
-$font-ips: 'IBM Plex Sans', sans-serif;
+$font-cs:  calluna-sans, sans-serif;
+$font-ips: ibm-plex-serif, sans-serif;
+
+$font-family-heading: $font-cs;
+$font-family-text:    $font-cs;
+$font-family-accent:  $font-ips;
+
+$font-weight-heading: 700;
+$font-weight-text: 300;
+$font-weight-accent: 200; // 300
+
 $line-height-base: 1.33em;
 
 // SIZES
