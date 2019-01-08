@@ -6,10 +6,105 @@
   <body>
 
     <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
+      <div class="hero block">
+        <div class="identity block">
+          <img class="logo" src="{{ "/assets/img/dzinz-logo.svg" | relative_url }}" alt="DZinz logo">
+          <span class="tagline">A sensible approach<br>to interior solutions</span>
+        </div>
+      </div>
+      <div class="expertise block">
+        <h2>Expertise</h2>
+        <ul>
+          <li>
+            <img src="{{ "/assets/img/icon-2d-3d-concepts.svg" | relative_url }}" alt="">
+            <h3>2D &amp; 3D Concepts</h3>
+            <p></p>
+          </li>
+          <li>
+            <img src="{{ "/assets/img/icon-apartments.svg" | relative_url }}" alt="">
+            <h3>Entire Apartments</h3>
+            <p></p>
+          </li>
+          <li>
+            <img src="{{ "/assets/img/icon-furniture.svg" | relative_url }}" alt="">
+            <h3>Furniture</h3>
+            <p></p>
+          </li>
+          <li>
+            <img src="{{ "/assets/img/icon-lighting.svg" | relative_url }}" alt="">
+            <h3>Lighting</h3>
+            <p></p>
+          </li>
+          <li>
+            <img src="{{ "/assets/img/icon-kitchens.svg" | relative_url }}" alt="">
+            <h3>Kitchens</h3>
+            <p></p>
+          </li>
+          <li>
+            <img src="{{ "/assets/img/icon-bathrooms.svg" | relative_url }}" alt="">
+            <h3>Bathrooms</h3>
+            <p></p>
+          </li>
+          <li>
+            <img src="{{ "/assets/img/icon-upcycling.svg" | relative_url }}" alt="">
+            <h3>Upcycling</h3>
+            <p></p>
+          </li>
+          <li>
+            <img src="{{ "/assets/img/icon-turnkey.svg" | relative_url }}" alt="">
+            <h3>Turnkey Projects</h3>
+            <p></p>
+          </li>
+        </ul>
+      </div>
+      <div class="contact block">
+        <div class="form-wrapper">
+          <h2>We’d love to work with you. Contact us &rsaquo;</h2>
+          <div class="form">
+            <div class="contact-details">
+              <p class="email"><a href="mailto:mail.dzinz1@gmail.com" target="_blank">mail@dzinz.co</a></p>
+              <p class="social"><a href="https://www.facebook.com/pg/dzinzinteriors" target="_blank">Facebook</a></p>
+              <p class="phone"><a href="tel:+91-9748441801" target="_blank">+91-9748441801</a></p>
+              <p class="phone"><a href="tel:+91-9836512224" target="_blank">+91-9836512224</a></p>
+              <p class="phone"><a href="tel:+91-8697045514" target="_blank">+91-8697045514</a></p>
+              <p class="location"><a href="https://goo.gl/maps/TZeevGkwg6C2" target="_blank">6/36 Netajinagar (170/9 N.S.C. Bose Road)<br>Kolkata 700092</a></p>
+            </div>
+            <form id="contact" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+              <label class="hide">
+                <span>Identity</span><input name="bot-field" />
+              </label>
+              <label>
+                <span>Your Name</span>
+                <input type="text" name="name" />
+              </label>
+              <label>
+                <span>Your Email</span>
+                <input type="email" name="email" />
+              </label>
+              <label>
+                <span>Your Requirement</span>
+                <select name="require[]" multiple>
+                  <option label="2D / 3D Concept" value="2d-3d">2D / 3D Concept</option>
+                  <option label="Apartment" value="apartment">Apartment</option>
+                  <option label="Kitchen" value="kitchen">Kitchen</option>
+                  <option label="Bathroom" value="bathroom">Bathroom</option>
+                  <option label="Furniture" value="furniture">Furniture</option>
+                  <option label="Other" value="other">Other</option>
+                </select>
+              </label>
+              <label>
+                <span>Other Details</span>
+                <textarea name="message"></textarea></label>
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
+
+    <footer>
+      All content &copy; 2009-2019 DZinz All Rights Reserved
+    </footer>
 
   </body>
 

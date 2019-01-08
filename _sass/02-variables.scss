@@ -1,5 +1,4 @@
 // COLORS
-$color-blue:         #0C37C9;
 $color-teal:         #007984;
 $color-teal-dark:    #0D4C5F;
 $color-teal-darker:  #003B4D;
@@ -18,22 +17,23 @@ $color-white:        #FFFFFF;
 
 
 // TYPOGRAPHY
+$font-r:   roboto-condensed, sans-serif;
 $font-cs:  calluna-sans, sans-serif;
 $font-ips: ibm-plex-serif, sans-serif;
 
-$font-family-heading: $font-cs;
+$font-family-heading: $font-r;
 $font-family-text:    $font-cs;
 $font-family-accent:  $font-ips;
 
-$font-weight-heading: 700;
+$font-weight-heading: 400;
 $font-weight-text: 300;
-$font-weight-accent: 200; // 300
+$font-weight-accent: 300;
 
-$line-height-base: 1.33em;
+$line-height-base: 1.33;
 
 // SIZES
 // Use these to specify fixed size elements
-$container-max-width: 1024px;
+$container-max-width: 1280px;
 $responsive-medium:   1024px;
 $responsive-small:    640px;
 

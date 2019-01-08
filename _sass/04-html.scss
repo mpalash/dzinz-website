@@ -1,6 +1,6 @@
 // FONTS IMPORT
 // @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Mono:400,500|Roboto:400,700|Work+Sans:400,600');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,500i|Roboto+Slab');
+// @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,500i|Roboto+Slab');
 
 html,
 body {
@@ -37,14 +37,14 @@ h4, h5, h6 {
   font-weight: normal;
 }
 a {
-  color: $color-blue;
+  color: $color-teal;
   text-decoration: none;
   &:hover {
-    border-bottom: 1px solid $color-blue;
+    border-bottom: 1px solid $color-teal;
   }
 }
 p {
-  font-size: 1rem;
+  font-size: 1.15rem;
   &:not(:last-child) {
     margin-bottom: 1em;
   }

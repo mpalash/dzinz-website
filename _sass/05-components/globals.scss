@@ -1,17 +1,20 @@
-.wrapper {
-  @extend .container;
-  margin: 0 auto;
-  padding-left: $s-xxl;
-  padding-right: $s-xxl;
-}
 .page-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
 
-  > div,
-  > article {
-    flex: 1 0 auto;
+}
+.page-content > div,
+.page-content > article,
+footer {
+  flex: 1 0 auto;
+  padding: $s-xl;
+  @media screen and (max-width: $responsive-small) {
+    padding: $s-b;
   }
+}
+.wrapper {
+  @extend .container;
+  margin: 0 auto;
 }

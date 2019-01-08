@@ -4,3 +4,203 @@
         "04-html",
         "05-components",
         "06-utilities";
+
+body {
+  background-color: $color-teal-dark;
+}
+.identity,
+.expertise {
+  background-color: $color-white;
+}
+.hero {
+  background: url(/assets/img/hero.jpg) no-repeat 50% 50% / cover;
+  background-attachment: fixed;
+  height: $s-xxl * 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.identity {
+  padding: $s-l;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  img.logo {
+    width: 100%;
+    max-width: $s-xxl * 4;
+  }
+  .tagline {
+    display: block;
+    margin: $s-l 0 0 0;
+    font-family: $font-family-accent;
+    font-weight: $font-weight-accent;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: $color-red;
+  }
+}
+
+.expertise {
+  h2 {
+    padding: 0 $gutter;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $color-red;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  ul {
+    @extend .r;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      @extend .c-3;
+      margin: $s-l 0;
+      text-align: center;
+    }
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -$s-xxl*1.25;
+  padding-bottom: $s-b !important;
+  @media screen and (max-width: $responsive-small) {
+    margin-top: -$s-xl;
+  }
+  .form-wrapper {
+    min-width: 60%;
+    background: $color-red;
+    color: $color-white;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  }
+  h2 {
+    padding: 0 $gutter;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: inherit;
+  }
+  a {
+    color: $color-white;
+    &:hover {
+      border-bottom: 1px solid $color-white;
+    }
+  }
+  .form {
+    @extend .r;
+    padding: $gutter*2 $gutter 0 $gutter;
+    .contact-details,
+    form {
+      @extend .c-6;
+    }
+  }
+  .contact-details {
+    p {
+      font-weight: 400;
+      padding-left: $s-l;
+      margin: 0 0 $s-l 0;
+      background-repeat: no-repeat;
+      background-position: top left;
+      background-size: auto $s-m;
+      &.phone {
+        letter-spacing: 0.05em;
+      }
+    }
+    .email { background-image: url(/assets/img/icon-email.svg); }
+    .social { background-image: url(/assets/img/icon-social.svg); }
+    .phone { background-image: url(/assets/img/icon-phone.svg); }
+    .location { background-image: url(/assets/img/icon-location.svg); }
+  }
+}
+
+form {
+  label span {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+  input,
+  textarea {
+    -webkit-appearance: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    padding: $s-s;
+    margin: $s-s 0 $s-m 0 !important;
+    border-bottom: 1px solid transparent;
+    background: rgba($color-white, 0.2);
+    resize: vertical;
+    transition: all 0.2s ease-in;
+    &:focus {
+      background: rgba($color-white, 0.6);
+      border-bottom: 1px solid $color-white;
+    }
+  }
+  textarea {
+    height: $s-xxl*2;
+  }
+  select {
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    padding: 0;
+    margin: $s-s 0 $s-m 0 !important;
+    height: $s-l*6;
+    background: rgba($color-white, 0.2);
+    color: white;
+    option {
+      padding: 0;
+      height: $s-l;
+      line-height: $s-l;
+      transition: all 0.2s ease-in;
+      &:before {
+        background-color: rgba($color-white, 0.2);
+        color: $color-white;
+        content: attr(label);
+        float: left;
+        padding: 0 $s-b;
+        width: 100%;
+        height: $s-l;
+        line-height: $s-l;
+      }
+      &:hover:before,
+      &:checked:before {
+        background: $color-white;
+        color: $color-ink;
+      }
+    }
+  }
+  button {
+    -webkit-appearance: none;
+    background: $color-teal-dark;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    padding: $s-b;
+    margin: $s-s 0 $s-m 0;
+    color: $color-white;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+  }
+}
+
+footer {
+  color: $color-white;
+  font-size: 0.85rem;
+  text-align: center;
+}

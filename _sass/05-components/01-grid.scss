@@ -2,7 +2,8 @@ $num-columns: 12;
 $gutter: $s-b; // 16px
 
 .container {
-  max-width: $container-max-width;
+  width: 100%;
+  // max-width: $container-max-width;
   margin: 0 auto;
 }
 .r,
@@ -32,6 +33,12 @@ $col-widths: ();
   .col-#{$i},
   .column-#{$i} {
     flex-basis: ($i / $num-columns) * 100%;
+    padding: 0 $gutter;
+    @media screen and (max-width: $responsive-small) {
+      padding-left: 0;
+      padding-right: 0;
+      flex-basis: 100%;
+    }
   }
   .o-#{$i},
   .off-#{$i},
