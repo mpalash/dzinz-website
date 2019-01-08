@@ -1,25 +1,33 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    font-weight: normal;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DZinz</title>
+    <link rel="stylesheet" href="https://use.typekit.net/avi2vhj.css">
+    <link rel="stylesheet" href="/assets/main.css">
+    <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
 
-<div class="container">
-  <h1>404</h1>
+  <body>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+    <main class="page-content page-404" aria-label="Content">
+
+      <div class="container">
+        <h1>404</h1>
+
+        <p><strong>Page not found :(</strong></p>
+        <p><a href="/">Return home &rsaquo;</a></p>
+      </div>
+
+    </main>
+
+    <footer>
+      All content &copy; 2009-2019 DZinz All Rights Reserved
+    </footer>
+
+  </body>
+
+</html>

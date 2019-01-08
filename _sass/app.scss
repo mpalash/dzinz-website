@@ -15,7 +15,7 @@ body {
 .hero {
   background: url(/assets/img/hero.jpg) no-repeat 50% 50% / cover;
   background-attachment: fixed;
-  height: $s-xxl * 10;
+  height: $s-xxxl * 5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@ body {
   box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   img.logo {
     width: 100%;
-    max-width: $s-xxl * 4;
+    max-width: $s-xxxl * 2;
   }
   .tagline {
     display: block;
