@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="63px" viewBox="0 0 65 63" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-lighting</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="02" transform="translate(-1388.000000, -1169.000000)" stroke="#007984" stroke-width="2">
+            <g id="icon-lighting" transform="translate(1389.452296, 1170.742937)">
+                <path d="M0.333333333,60 L61.6666667,60" id="Stroke-3013"></path>
+                <path d="M29.6666667,60 L29.6666667,0" id="Stroke-3014"></path>
+                <polygon id="Stroke-3015" points="61.1093333 14.8386667 46.0266667 29.924 40.3706667 16.724 47.912 9.18"></polygon>
+                <polygon id="Stroke-3016" points="17.1093333 36.9792 0.333333333 23.8005333 12.7626667 16.6112 21.152 23.2005333"></polygon>
+                <polyline id="Stroke-3017" points="29.6666667 12 22.6053333 12 16.648 19.664"></polyline>
+                <polyline id="Stroke-3018" points="29.6666667 4 35.7706667 4 44.3333333 12.7573333"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
